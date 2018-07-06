@@ -1,0 +1,1 @@
+Git 这里面是 license.txt 文件的内容
