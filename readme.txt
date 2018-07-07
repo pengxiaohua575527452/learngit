@@ -5,3 +5,5 @@ F:\git\git-test\readme.txt
 这里是在git dev 分支做出的修改
 这里是在git feature 分支做出的修改
 这里是在git div 第二次做出的修改
+当前正在dev 分支上工作，但是需要修改bug
+这是为了测试 pull dev 的文本
