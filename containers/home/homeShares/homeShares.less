@@ -1,0 +1,32 @@
+@color444444: #444444;
+
+.ali-shares {
+  & .shares-title {
+    color: @color444444;
+  }
+  & .shares-price {
+    & p {
+      display: flex;
+      align-items: flex-end;
+    }
+    & p:first-child {
+      color: #1A1A1A;
+    }
+    & p:last-child {
+      color: #2DA94F;
+    }
+  }
+  & .shares-detail {
+    & li {
+      border-bottom: 1px #EAEAEA solid;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+  & .shares-chart {
+    & .shares-chart-tip {
+      color: @color444444;
+    }
+  }
+}

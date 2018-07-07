@@ -1,0 +1,30 @@
+.ali-achievement {
+  text-align: center;
+  box-sizing: border-box;
+  & .achievement-title {
+    color: #666666;
+  }
+  & .achievement-subtitle {
+    color: #333333;
+  }
+  & .achievement-link{
+    display:flex;
+    flex-wrap:wrap;
+    align-items:center;
+    justify-content:center;
+
+    & a{
+      display:flex;
+      color: #4285F4;
+    }
+    & .icon-live {
+      background: url("../../../layouts/image/icon_live.png") no-repeat left center;
+    }
+    & .icon-news {
+      background: url("../../../layouts/image/icon_news.png") no-repeat left center;
+    }
+    & .icon-ppt {
+      background: url("../../../layouts/image/icon_ppt.png") no-repeat left center;
+    }
+  }
+}

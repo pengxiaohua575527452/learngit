@@ -1,0 +1,40 @@
+.secfile-list {
+  & .secfile-item {
+    //border-bottom: 1px #EAEAEA solid;
+    & .secfile-item-title {
+      color: #1A1A1A;
+    }
+    & .secfile-item-subtitle {
+      color: #4285F4;
+    }
+    & div:last-child {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      & .secfile-item-time {
+        color: #666666;
+      }
+      & .secfile-item-link {
+        & span.icon {
+          display: inline-block;
+          background-size: cover;
+        }
+        & .icon-download-w {
+          background: url("../../../layouts/image/icon_download_w.png") no-repeat center center;
+        }
+        & .icon-download-e {
+          background: url("../../../layouts/image/icon_download_e.png") no-repeat center center;
+        }
+        & .icon-download-p {
+          background: url("../../../layouts/image/icon_download_p.png") no-repeat center center;
+        }
+        & .icon-download-x {
+          background: url("../../../layouts/image/icon_download_x.png") no-repeat center center;
+        }
+      }
+    }
+  }
+  & .secfile-item:last-child {
+    border-bottom: 0;
+  }
+}

@@ -1,0 +1,258 @@
+
+// 定义整体距离上面组件的距离
+@login-comp-margin-top : 50px;
+// 定义标志logo-box的高度的值
+@logo-box-height:38px;
+//设定标志logo-box的padding值
+@logo-box-padding-left:20px;
+//定义表单的单项高度的值
+@form-menu-list-height:34px;
+@form-menu-list-border:1px solid #ccc;
+//定义表单组的上边距
+@form-margin-top:10px;
+// 定义表单的字体颜色
+@form-input-color:#666;
+
+//定义下一步按钮的上边距 
+@btn-next-box-margin-top:100px;
+
+
+//菜单的投影
+@menu-box-shadow:3px 3px 3px #ccc;;
+
+//阿里的颜色
+@ali_color:#FF6600;
+
+
+
+
+.out-box{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    width:100%;
+}
+// logo
+.login-comp{
+    width:80%;
+    // margin-top:@login-comp-margin-top ;
+    &>.logo-box{
+        display:flex;
+        justify-content:flex-start;
+        width:100%;
+        height:@logo-box-height;
+
+        &>img{
+            height:100%;
+        }
+    }
+
+}
+.title{
+    display:flex;
+    justify-content:flex-start;
+    margin-top:10px;
+    font-size:24px;
+    font-weight:100;
+    line-height:32px;
+
+
+}
+.subtitle{
+    display:flex;
+    justify-content:flex-start;
+    width:100%;
+    font-size:14px;
+    font-weight:200;
+    line-height:18px;
+    text-align:left;
+}
+.form{
+    position:relative;
+    margin-top:@form-margin-top;
+    width:100%;
+
+    &>div{
+        width:100%;
+        height:100%;
+    }
+}
+.input-name,
+.input-name-f-name,
+.input-name-l-name,
+.input-status,
+.c-name-input{
+    width:100%;
+    height:@form-menu-list-height;
+    font-size:16px;
+    font-weight:200;
+    color:@form-input-color;
+    border:none;
+    outline:none;
+    border-bottom:@form-menu-list-border;
+    background:none;
+
+}
+
+.next-box{
+    display:flex;
+    justify-content:flex-end;
+    margin-top:@btn-next-box-margin-top;
+    height:35px;
+    width:100%;
+    &>div{
+        
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        width:35%;
+        height:100%;
+        background:@ali_color;
+        color:#fff;
+        text-align:center;
+        font-weight:400;
+    }
+    &>div:first-of-type{
+        margin-right:10px;
+        background:#ccc;
+    }
+   
+    .silent{
+        font-weight:200;
+        color:#222;
+        background:#ccc;
+    }
+}
+
+.status-menu{
+    position:absolute;
+    z-index:99;
+    top:-100px;
+    width:100%;
+    border:1px solid #ccc;
+    background:#fff;
+    box-shadow:3px 3px 3px #eee;
+    
+    &>li{
+        display:flex;
+        align-items:center;
+        box-sizing:border-box;
+        padding-left:20px;
+        width:100%;
+        height:45px;
+        font-size:18px;
+        font-weight:200;
+        border-bottom:1px solid #eee;
+    }
+}
+
+.fund-size-input-box{
+    display:flex;
+    flex-direction:row;
+    width:100%;
+    height:@form-menu-list-height;
+    border-bottom:@form-menu-list-border;
+    .fund-size-symbol{
+        display:flex;
+        justify-content:flex-start;
+        align-items:center;
+        width:10%;
+        height:100%;
+        font-size:20px;
+        font-weight:200;
+        
+    
+    }
+    
+    &>.fund-size-input{
+        width:60%;
+        font-size:20px;
+        background:none;
+        border:none;
+        outline:none;
+    }
+    &>.fund-size-unit{
+        display:flex;
+        justify-content:flex-end;
+        align-items:center;
+        width:30%;
+        height:100%;
+        font-size:20px;
+        font-weight:200;
+    }
+}
+.fund-size-input-subtitle{
+    margin-top:10px;
+    color:@ali_color;
+}
+.all-warning-style{
+    display:flex;
+    justify-content:flex-start;
+    width:100%;
+    margin-top:10px;
+    color:@ali_color;
+    font-size:12px;
+}
+
+     
+.fund-style-box{
+    
+    display:flex;
+    flex-direction:column;
+    width:100%;
+    height:50px;
+    
+    &>.fund-style-input-box{
+        display:flex;
+        flex-direction:row;
+        border-bottom:@form-menu-list-border;
+        &>label{
+            position:relative;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            width:50%;
+            height:50px;;
+            font-size:20px;
+            
+            &>input{
+                display:absolute;
+                width:0px;
+                height:0px;
+                opacity:0;
+            }
+        }
+        &>.active{
+            background:@ali_color;
+            color:#fff;
+            font-size:500;
+        }
+    }
+    .fund-style-subtitle{
+        display:flex;
+        justify-content:flex-start;
+        margin-top:5px;
+        font-size:12px;
+        font-weight:300;
+        line-height:16px;
+        text-align:left;
+    }
+    .fund-style-warning{
+        display:flex;
+        justify-content:flex-start;
+        font-size:14px;
+        font-weight:100;
+        text-align:left;
+        color:@ali_color;
+    }
+
+}
+.toggle{
+    
+    position:fixed;
+    top:10px;
+    right:10px;
+    padding:10px;
+
+}

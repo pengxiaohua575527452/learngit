@@ -1,0 +1,68 @@
+.donw-file-box{
+    position:relative;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    box-sizing:border-box;
+
+    width:100%;
+
+    &>h2{
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        box-sizing:border-box;
+        width:100%;
+        color:#666666 ;
+        font-weight:400;
+        text-align:center;
+    }
+    &>h3{
+        display:flex;
+        justify-content:center;
+        box-sizing:border-box;
+        width:100%;
+        color:#444;
+        font-weight:600;
+        text-align:center;
+    }
+
+
+    &>.file-box{
+        width:100%;
+        &>ul{
+
+            display:flex;
+            flex-direction:row;
+            flex-wrap:wrap;
+            box-sizing:border-box;
+
+            &>li{
+                box-sizing:border-box;
+                width:50%;
+                // E:\alitt_protal\test\layouts\image\file.png
+                // E:\alitt_protal\test\containers\quarter\quarterFileComp\quarterFileComp.less
+                background:url('../../../layouts/image/icon_achieve_file.png') no-repeat center 16px;
+
+                &>a{
+                  width:100%;
+                  height:100%;
+                  display: flex;
+                  flex-direction: column;
+                  justify-content: space-between;
+                  align-items: center;
+                  text-align: center;
+                  &>.title{
+                    font-weight:500;
+                  }
+                  &>.dTxt{
+                    font-weight:500;
+                    color:#4285F4;
+                  }
+                }
+
+            }
+        }
+    }
+
+}
