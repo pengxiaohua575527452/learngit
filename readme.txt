@@ -5,3 +5,4 @@ F:\git\git-test\readme.txt
 这里是在git dev 分支做出的修改
 这里是在git feature 分支做出的修改
 这里是在git div 第二次做出的修改
+这里是bug分支做出的修改
